@@ -65,8 +65,8 @@
   body {
 	margin:0;
 	padding:0;
-	background-color:#94fdf8;
-	color:#1e374d;
+	background-color:#1e374d;
+	color:#94fdf8;
 	font-family:"Open Sans",system-ui;
 	font-size:1.125rem;     				/* 18px */
     font-weight:400;
@@ -153,6 +153,7 @@ body {
 footer {
 	margin:var(--spacing-xxl) 0;            /* 4rem (64px) top and bottom */
     font-size:var(--scale-0);
+	color:#94fdf8;
 }
 
 /* Responsive adjustments */
@@ -177,11 +178,11 @@ footer {
 /* Links
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a {
-	color:#2457F5;
+	color:#94fdf8;
 	text-decoration:underline;
 }
 a:hover {
-	color:#083BDA;
+	color:#7aefff; /* lighter version of your text color */
 }
 
 /* Buttons
@@ -197,9 +198,9 @@ a:hover {
   	font-weight:700;
 	text-decoration:none;
 	white-space:normal;
-  	background-color:var(--button-background,transparent);
-	color:var(--button-text,#000000);
-	border:var(--button-border,none);
+  	background-color:#94fdf8;
+	color:#1e374d;
+	border:none;
 	border-radius:0.5rem;
 	cursor:pointer;
 	box-sizing:border-box;
@@ -252,7 +253,7 @@ a:hover {
 	color-scheme:dark;
 }
 :root.theme-dark :focus-visible {
-	outline: 2px solid #4899F7;
+	outline: 2px solid #94fdf8;
 	outline-offset: 2px;
   }
 :root.theme-dark body {
@@ -260,10 +261,10 @@ a:hover {
 	color:#94fdf8;
 }
 :root.theme-dark a:not(.button) {
-	color:#4899F7;
+	color:#94fdf8;
 }
 :root.theme-dark a:not(.button):hover {
-	color:#7AB8FF;
+	color:#7aefff;
 }
 
 /* Auto theme */
@@ -272,25 +273,26 @@ a:hover {
 }
 @media (prefers-color-scheme:dark) {
 	:root.theme-auto body {
-	background-color:#121212;
-	color:#ffffff;
+	background-color:#1e374d;
+	color:#94fdf8;
 }
 :root.theme-auto :focus-visible {
-    outline: 2px solid #4899F7;
+    outline: 2px solid #94fdf8;
     outline-offset: 2px;
   }
 :root.theme-auto a:not(.button) {
-	color:#4899F7;
+	color:#94fdf8;
 }
 :root.theme-auto a:not(.button):hover {
-	color:#7AB8FF;
+	color:#7aefff;
 }
 }
 
 /* Button Text Color Override
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .button:hover,button:hover {
-	color:var(--button-text);
+	color:#1e374d;
+	background-color:#7aefff;
 }
 
 /* Responsive Typography
