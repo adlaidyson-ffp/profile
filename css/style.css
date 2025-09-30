@@ -257,7 +257,7 @@ a:hover {
 	outline-offset: 2px;
   }
 :root.theme-dark body {
-	background-color:#1e374d;
+	background-color:#111827;
 	color:#94fdf8;
 }
 :root.theme-dark a:not(.button) {
@@ -273,7 +273,7 @@ a:hover {
 }
 @media (prefers-color-scheme:dark) {
 	:root.theme-auto body {
-	background-color:#1e374d;
+	background-color:#111827;
 	color:#94fdf8;
 }
 :root.theme-auto :focus-visible {
